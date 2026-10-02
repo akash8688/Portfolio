@@ -13,18 +13,18 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: {
+                        navy: {
                             800: '#1e293b', 
                             900: '#0f172a', 
                         },
-                        accent: {
-                            50: '#fff7ed',
-                            100: '#ffedd5',
-                            200: '#fed7aa',
-                            400: '#fb923c',
-                            500: '#f97316', 
-                            600: '#ea580c',
-                            700: '#c2410c',
+                        teal: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6', 
+                            600: '#0d9488',
+                            700: '#0f766e',
                         }
                     },
                     fontFamily: {
@@ -43,20 +43,20 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
-                    <span class="font-heading font-bold text-2xl text-primary-900 tracking-tight">AKASH<span class="text-accent-500">.</span></span>
+                    <span class="font-heading font-bold text-2xl text-navy-900 tracking-tight">AKASH<span class="text-teal-500">.</span></span>
                 </div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-gray-600 hover:text-accent-500 font-medium transition-colors">About</a>
-                    <a href="#skills" class="text-gray-600 hover:text-accent-500 font-medium transition-colors">Skills</a>
-                    <a href="#experience" class="text-gray-600 hover:text-accent-500 font-medium transition-colors">Experience</a>
-                    <a href="#certifications" class="text-gray-600 hover:text-accent-500 font-medium transition-colors">Certifications</a>
-                    <a href="#education" class="text-gray-600 hover:text-accent-500 font-medium transition-colors">Education</a>
-                    <a href="#personal" class="text-gray-600 hover:text-accent-500 font-medium transition-colors">Personal</a>
-                    <a href="#contact" class="text-gray-600 hover:text-accent-500 font-medium transition-colors">Contact</a>
+                    <a href="#about" class="text-gray-600 hover:text-teal-500 font-medium transition-colors">About</a>
+                    <a href="#skills" class="text-gray-600 hover:text-teal-500 font-medium transition-colors">Skills</a>
+                    <a href="#experience" class="text-gray-600 hover:text-teal-500 font-medium transition-colors">Experience</a>
+                    <a href="#certifications" class="text-gray-600 hover:text-teal-500 font-medium transition-colors">Certifications</a>
+                    <a href="#education" class="text-gray-600 hover:text-teal-500 font-medium transition-colors">Education</a>
+                    <a href="#personal" class="text-gray-600 hover:text-teal-500 font-medium transition-colors">Personal</a>
+                    <a href="#contact" class="text-gray-600 hover:text-teal-500 font-medium transition-colors">Contact</a>
                 </div>
                 <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-accent-500 focus:outline-none">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-teal-500 focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -65,13 +65,13 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full left-0 border-t border-gray-100">
             <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 flex flex-col">
-                <a href="#about" class="block px-3 py-2 text-gray-600 hover:text-accent-500 font-medium mobile-link">About</a>
-                <a href="#skills" class="block px-3 py-2 text-gray-600 hover:text-accent-500 font-medium mobile-link">Skills</a>
-                <a href="#experience" class="block px-3 py-2 text-gray-600 hover:text-accent-500 font-medium mobile-link">Experience</a>
-                <a href="#certifications" class="block px-3 py-2 text-gray-600 hover:text-accent-500 font-medium mobile-link">Certifications</a>
-                <a href="#education" class="block px-3 py-2 text-gray-600 hover:text-accent-500 font-medium mobile-link">Education</a>
-                <a href="#personal" class="block px-3 py-2 text-gray-600 hover:text-accent-500 font-medium mobile-link">Personal</a>
-                <a href="#contact" class="block px-3 py-2 text-gray-600 hover:text-accent-500 font-medium mobile-link">Contact</a>
+                <a href="#about" class="block px-3 py-2 text-gray-600 hover:text-teal-500 font-medium mobile-link">About</a>
+                <a href="#skills" class="block px-3 py-2 text-gray-600 hover:text-teal-500 font-medium mobile-link">Skills</a>
+                <a href="#experience" class="block px-3 py-2 text-gray-600 hover:text-teal-500 font-medium mobile-link">Experience</a>
+                <a href="#certifications" class="block px-3 py-2 text-gray-600 hover:text-teal-500 font-medium mobile-link">Certifications</a>
+                <a href="#education" class="block px-3 py-2 text-gray-600 hover:text-teal-500 font-medium mobile-link">Education</a>
+                <a href="#personal" class="block px-3 py-2 text-gray-600 hover:text-teal-500 font-medium mobile-link">Personal</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-600 hover:text-teal-500 font-medium mobile-link">Contact</a>
             </div>
         </div>
     </nav>
@@ -79,15 +79,15 @@
     <!-- Hero Section -->
     <section id="about" class="min-h-screen flex items-center pt-20 bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
         <!-- Decorative blobs -->
-        <div class="absolute top-20 -left-20 w-72 h-72 bg-accent-400 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob"></div>
-        <div class="absolute top-40 -right-20 w-72 h-72 bg-primary-800 rounded-full mix-blend-multiply filter blur-2xl opacity-10 animate-blob animation-delay-2000"></div>
+        <div class="absolute top-20 -left-20 w-72 h-72 bg-teal-400 rounded-full mix-blend-multiply filter blur-2xl opacity-20 animate-blob"></div>
+        <div class="absolute top-40 -right-20 w-72 h-72 bg-navy-800 rounded-full mix-blend-multiply filter blur-2xl opacity-10 animate-blob animation-delay-2000"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full py-12">
             <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
                 <!-- Text Content -->
                 <div class="lg:w-3/5 animate-fade-in-up text-center lg:text-left">
-                    <p class="text-accent-600 font-semibold tracking-wide uppercase mb-3">Hi, my name is</p>
-                    <h1 class="font-heading text-5xl md:text-7xl font-bold text-primary-900 mb-4 leading-tight">
+                    <p class="text-teal-600 font-semibold tracking-wide uppercase mb-3">Hi, my name is</p>
+                    <h1 class="font-heading text-5xl md:text-7xl font-bold text-navy-900 mb-4 leading-tight">
                         Akash Kashyap.
                     </h1>
                     <h2 class="font-heading text-3xl md:text-5xl font-bold text-gray-500 mb-6 leading-tight">
@@ -97,22 +97,25 @@
                         Results-driven Digital Marketing Executive skilled in online marketing, SEO, social media, and content strategy. Proven at boosting brand awareness, engagement, and revenue through data-driven, multi-channel campaigns.
                     </p>
                     <div class="flex flex-wrap justify-center lg:justify-start gap-4">
-                        <a href="#contact" class="px-8 py-4 bg-accent-500 hover:bg-accent-600 text-white font-medium rounded-lg transition-all shadow-lg hover:shadow-accent-500/30 transform hover:-translate-y-1">
+                        <a href="#contact" class="px-8 py-4 bg-teal-500 hover:bg-teal-600 text-white font-medium rounded-lg transition-all shadow-lg hover:shadow-teal-500/30 transform hover:-translate-y-1">
                             Hire Me <i class="fas fa-arrow-right ml-2"></i>
                         </a>
-                        <a href="Professional Modern CV Resume .pdf" target="_blank" class="px-8 py-4 bg-white border-2 border-primary-900 text-primary-900 hover:bg-primary-900 hover:text-white font-medium rounded-lg transition-all shadow-md transform hover:-translate-y-1">
+                        <a href="Professional Modern CV Resume _2.pdf" target="_blank" class="px-8 py-4 bg-white border-2 border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white font-medium rounded-lg transition-all shadow-md transform hover:-translate-y-1">
                             Download CV <i class="fas fa-download ml-2"></i>
+                        </a>
+                        <a href="LOR of Akash Kashyap.pdf" target="_blank" class="px-8 py-4 bg-white border-2 border-teal-500 text-teal-600 hover:bg-teal-500 hover:text-white font-medium rounded-lg transition-all shadow-md transform hover:-translate-y-1">
+                            View LOR <i class="fas fa-file-alt ml-2"></i>
                         </a>
                     </div>
                 </div>
                 <!-- Image Content -->
                 <div class="lg:w-2/5 animate-fade-in-up flex justify-center mb-8 lg:mb-0">
-                    <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full p-2 border-4 border-accent-500/30 overflow-visible group">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full p-2 border-4 border-teal-500/30 overflow-visible group">
                         <img src="image.jpeg" alt="Akash Kashyap" class="w-full h-full object-cover rounded-full shadow-2xl transition-transform duration-500 group-hover:scale-105">
                         <!-- Floating badge -->
                         <div class="absolute bottom-4 right-0 lg:-right-4 bg-white px-4 py-3 rounded-2xl shadow-xl border border-gray-100 flex items-center space-x-2 animate-bounce">
                             <span class="text-2xl">🚀</span>
-                            <span class="font-bold text-primary-900 text-sm">Marketing Pro</span>
+                            <span class="font-bold text-navy-900 text-sm">Marketing Pro</span>
                         </div>
                     </div>
                 </div>
@@ -124,66 +127,66 @@
     <section id="skills" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
-                <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary-900 mb-4">Skills</h2>
-                <div class="h-1 w-20 bg-accent-500 mx-auto rounded"></div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy-900 mb-4">Skills</h2>
+                <div class="h-1 w-20 bg-teal-500 mx-auto rounded"></div>
             </div>
             
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6 reveal delay-100">
                 <!-- Skill Badges -->
                 <div class="bg-gray-50 rounded-xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
-                    <div class="w-16 h-16 bg-accent-100 text-accent-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-500 group-hover:text-white transition-colors">
+                    <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-500 group-hover:text-white transition-colors">
                         <i class="fas fa-share-nodes text-2xl"></i>
                     </div>
-                    <h3 class="font-heading font-semibold text-primary-900">Social Media Marketing</h3>
+                    <h3 class="font-heading font-semibold text-navy-900">Social Media Marketing</h3>
                 </div>
                 
                 <div class="bg-gray-50 rounded-xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
-                    <div class="w-16 h-16 bg-accent-100 text-accent-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-500 group-hover:text-white transition-colors">
+                    <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-500 group-hover:text-white transition-colors">
                         <i class="fab fa-google text-2xl"></i>
                     </div>
-                    <h3 class="font-heading font-semibold text-primary-900">Google Ads</h3>
+                    <h3 class="font-heading font-semibold text-navy-900">Google Ads</h3>
                 </div>
 
                 <div class="bg-gray-50 rounded-xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
-                    <div class="w-16 h-16 bg-accent-100 text-accent-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-500 group-hover:text-white transition-colors">
+                    <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-500 group-hover:text-white transition-colors">
                         <i class="fas fa-pen-nib text-2xl"></i>
                     </div>
-                    <h3 class="font-heading font-semibold text-primary-900">Content Creation</h3>
+                    <h3 class="font-heading font-semibold text-navy-900">Content Creation</h3>
                 </div>
 
                 <div class="bg-gray-50 rounded-xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
-                    <div class="w-16 h-16 bg-accent-100 text-accent-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-500 group-hover:text-white transition-colors">
+                    <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-500 group-hover:text-white transition-colors">
                         <i class="fas fa-magnifying-glass-chart text-2xl"></i>
                     </div>
-                    <h3 class="font-heading font-semibold text-primary-900">SEO</h3>
+                    <h3 class="font-heading font-semibold text-navy-900">SEO</h3>
                 </div>
 
                 <div class="bg-gray-50 rounded-xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
-                    <div class="w-16 h-16 bg-accent-100 text-accent-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-500 group-hover:text-white transition-colors">
+                    <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-500 group-hover:text-white transition-colors">
                         <i class="fas fa-envelope-open-text text-2xl"></i>
                     </div>
-                    <h3 class="font-heading font-semibold text-primary-900">Email Marketing</h3>
+                    <h3 class="font-heading font-semibold text-navy-900">Email Marketing</h3>
                 </div>
 
                 <div class="bg-gray-50 rounded-xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
-                    <div class="w-16 h-16 bg-accent-100 text-accent-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-500 group-hover:text-white transition-colors">
+                    <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-500 group-hover:text-white transition-colors">
                         <i class="fab fa-wordpress text-2xl"></i>
                     </div>
-                    <h3 class="font-heading font-semibold text-primary-900">WordPress</h3>
+                    <h3 class="font-heading font-semibold text-navy-900">WordPress</h3>
                 </div>
 
                 <div class="bg-gray-50 rounded-xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
-                    <div class="w-16 h-16 bg-accent-100 text-accent-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-500 group-hover:text-white transition-colors">
+                    <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-500 group-hover:text-white transition-colors">
                         <i class="fas fa-calendar-alt text-2xl"></i>
                     </div>
-                    <h3 class="font-heading font-semibold text-primary-900">Social Media Planning</h3>
+                    <h3 class="font-heading font-semibold text-navy-900">Social Media Planning</h3>
                 </div>
 
                 <div class="bg-gray-50 rounded-xl p-6 text-center border border-gray-100 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 group">
-                    <div class="w-16 h-16 bg-accent-100 text-accent-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-500 group-hover:text-white transition-colors">
+                    <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-teal-500 group-hover:text-white transition-colors">
                         <i class="fas fa-users-viewfinder text-2xl"></i>
                     </div>
-                    <h3 class="font-heading font-semibold text-primary-900">Competitor Research</h3>
+                    <h3 class="font-heading font-semibold text-navy-900">Competitor Research</h3>
                 </div>
             </div>
         </div>
@@ -193,22 +196,22 @@
     <section id="experience" class="py-24 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
-                <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary-900 mb-4">Experience & Live Project</h2>
-                <div class="h-1 w-20 bg-accent-500 mx-auto rounded"></div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy-900 mb-4">Experience & Live Projects</h2>
+                <div class="h-1 w-20 bg-teal-500 mx-auto rounded"></div>
             </div>
 
-            <div class="relative border-l-4 border-accent-200 ml-4 md:ml-0 md:mx-auto md:w-full space-y-12 pb-4">
+            <div class="relative border-l-4 border-teal-200 ml-4 md:ml-0 md:mx-auto md:w-full space-y-12 pb-4">
                 <!-- Timeline Item 1 -->
                 <div class="relative pl-8 md:pl-0 reveal delay-100">
                     <div class="md:w-1/2 md:pr-12 md:mr-auto w-full">
-                        <div class="hidden md:block absolute w-5 h-5 bg-accent-500 rounded-full left-1/2 transform -translate-x-1/2 mt-1.5 border-4 border-gray-50"></div>
-                        <div class="md:hidden absolute w-5 h-5 bg-accent-500 rounded-full -left-[11px] mt-1.5 border-4 border-gray-50 z-10"></div>
+                        <div class="hidden md:block absolute w-5 h-5 bg-teal-500 rounded-full left-1/2 transform -translate-x-1/2 mt-1.5 border-4 border-gray-50"></div>
+                        <div class="md:hidden absolute w-5 h-5 bg-teal-500 rounded-full -left-[11px] mt-1.5 border-4 border-gray-50 z-10"></div>
                         
-                        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow relative hover:border-accent-300 text-left">
-                            <span class="text-accent-600 font-semibold text-sm mb-2 block">Present</span>
-                            <h3 class="font-heading text-xl font-bold text-primary-900 mb-1">DIGITAL MARKETING INTERN</h3>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow relative hover:border-teal-300 text-left">
+                            <span class="text-teal-600 font-semibold text-sm mb-2 block">8th August 2026 to 21st September 2026</span>
+                            <h3 class="font-heading text-xl font-bold text-navy-900 mb-1">DIGITAL MARKETING INTERN</h3>
                             <h4 class="text-gray-500 font-medium mb-4">Digital Folks Cooperation</h4>
-                            <ul class="text-gray-600 leading-relaxed space-y-2 list-disc list-outside ml-4">
+                            <ul class="text-gray-600 leading-relaxed space-y-2 list-disc list-outside ml-4 mb-6">
                                 <li><strong>Content Creation</strong> - Made engaging digital content, including social media posts, blog articles, infographics, and videos to connect with target audiences.</li>
                                 <li><strong>Social Media Management</strong> - Managed social media accounts by scheduling posts, tracking engagement, and analyzing performance metrics for optimization.</li>
                                 <li><strong>SEO Optimization</strong> - Assisted in optimizing website content through keyword research, on-page SEO, and link-building strategies to improve search rankings.</li>
@@ -217,6 +220,23 @@
                                 <li><strong>Market Research</strong> - Conducted competitor analysis and market research to identify trends, opportunities, and industry best practices.</li>
                                 <li><strong>Administrative Support</strong> - Handled campaign documentation, coordinated with teams, and ensured smooth execution of marketing strategies.</li>
                             </ul>
+                            
+                            <!-- Client Projects Sub-section -->
+                            <div class="bg-teal-50 rounded-xl p-5 border border-teal-100">
+                                <h5 class="font-heading font-bold text-navy-900 mb-4 text-sm uppercase tracking-wider flex items-center">
+                                    <i class="fas fa-briefcase text-teal-500 mr-2"></i> Client Projects Completed
+                                </h5>
+                                <ul class="text-gray-700 space-y-3 text-sm list-none">
+                                    <li class="flex items-start"><i class="fas fa-check-circle text-teal-500 mt-1 mr-2"></i> <span><strong>Dolphin Labs:</strong> Meta Ads & Social Media Marketing (Managed Meta advertising campaigns and social media marketing activities to support brand awareness and lead generation).</span></li>
+                                    <li class="flex items-start"><i class="fas fa-check-circle text-teal-500 mt-1 mr-2"></i> <span><strong>Shikshalay Library:</strong> Social Media Marketing (Created and managed social media content to improve online presence and audience engagement).</span></li>
+                                    <li class="flex items-start"><i class="fas fa-check-circle text-teal-500 mt-1 mr-2"></i> <span><strong>Atmos Solar:</strong> Meta Ads, Social Media Marketing & Google Business Profile (GMB) (Worked on Meta advertising campaigns, social media content, and Google Business Profile optimization to strengthen local visibility).</span></li>
+                                    <li class="flex items-start"><i class="fas fa-check-circle text-teal-500 mt-1 mr-2"></i> <span><strong>SP Enterprises:</strong> Social Media Marketing (Managed social media content and marketing activities to improve brand visibility and engagement).</span></li>
+                                    <li class="flex items-start"><i class="fas fa-check-circle text-teal-500 mt-1 mr-2"></i> <span><strong>GemVibe:</strong> Social Media Marketing (Planned and managed social media content and promotional activities for brand growth and audience engagement).</span></li>
+                                    <li class="flex items-start"><i class="fas fa-check-circle text-teal-500 mt-1 mr-2"></i> <span><strong>Dhanwantri Clinic:</strong> Website Development & Social Media Marketing (Contributed to website development and managed social media marketing activities to build the clinic's online presence).</span></li>
+                                    <li class="flex items-start"><i class="fas fa-check-circle text-teal-500 mt-1 mr-2"></i> <span><strong>Revorbs:</strong> Meta Ads & Social Media Marketing (Worked on Meta advertising campaigns and social media marketing to generate leads and improve digital reach).</span></li>
+                                    <li class="flex items-start"><i class="fas fa-check-circle text-teal-500 mt-1 mr-2"></i> <span><strong>Nexlayn:</strong> Social Media Marketing & Meta Ads (Managed social media marketing and Meta Ads campaigns focused on audience reach, engagement, and lead generation).</span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -224,17 +244,17 @@
                 <!-- Timeline Item 2 -->
                 <div class="relative pl-8 md:pl-0 reveal delay-200">
                     <div class="md:w-1/2 md:pl-12 md:ml-auto w-full">
-                        <div class="hidden md:block absolute w-5 h-5 bg-accent-500 rounded-full left-1/2 transform -translate-x-1/2 mt-1.5 border-4 border-gray-50"></div>
-                        <div class="md:hidden absolute w-5 h-5 bg-accent-500 rounded-full -left-[11px] mt-1.5 border-4 border-gray-50 z-10"></div>
+                        <div class="hidden md:block absolute w-5 h-5 bg-teal-500 rounded-full left-1/2 transform -translate-x-1/2 mt-1.5 border-4 border-gray-50"></div>
+                        <div class="md:hidden absolute w-5 h-5 bg-teal-500 rounded-full -left-[11px] mt-1.5 border-4 border-gray-50 z-10"></div>
                         
-                        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow relative hover:border-accent-300 text-left">
-                            <span class="text-accent-600 font-semibold text-sm mb-2 block">November 2025 - Present</span>
-                            <h3 class="font-heading text-xl font-bold text-primary-900 mb-1">Live Project</h3>
+                        <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow relative hover:border-teal-300 text-left">
+                            <span class="text-teal-600 font-semibold text-sm mb-2 block">November 2025 - Present</span>
+                            <h3 class="font-heading text-xl font-bold text-navy-900 mb-1">Independent Live Project</h3>
                             <h4 class="text-gray-500 font-medium mb-4">Nextgen Institutions, Bengaluru</h4>
                             <p class="text-gray-600 leading-relaxed mb-3">A project focused on enhancing SEO and marketing strategies for institutions.</p>
                             <ul class="text-gray-600 leading-relaxed space-y-2 list-disc list-outside ml-4">
-                                <li>Design and Create a complete SEO-first Website</li>
-                                <li>Hands-on execution of SEO, SMM, Google Ads, Meta Ads, and Content Marketing</li>
+                                <li>Design and Create a complete SEO-first Website.</li>
+                                <li><strong>Hands-on execution of Meta Ads</strong> alongside SEO, SMM, Google Ads, and Content Marketing.</li>
                             </ul>
                         </div>
                     </div>
@@ -243,32 +263,50 @@
         </div>
     </section>
 
-    <!-- Certifications Section -->
+    <!-- Certifications & LOR Section -->
     <section id="certifications" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
-                <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary-900 mb-4">Certification</h2>
-                <div class="h-1 w-20 bg-accent-500 mx-auto rounded"></div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy-900 mb-4">Certifications & Letter of Recommendation</h2>
+                <div class="h-1 w-20 bg-teal-500 mx-auto rounded"></div>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- LOR Card (Spans full width) -->
+                <div class="bg-gradient-to-r from-gray-50 to-white rounded-xl p-8 border border-gray-200 shadow-sm hover:shadow-xl hover:shadow-teal-500/10 transition-all hover:-translate-y-2 reveal delay-100 text-left col-span-1 lg:col-span-3 border-l-4 border-l-teal-500">
+                    <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
+                        <div>
+                            <div class="flex items-center gap-3 mb-2">
+                                <h3 class="font-heading text-2xl font-bold text-navy-900">Letter of Recommendation & Internship Completion</h3>
+                                <span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded flex items-center"><i class="fas fa-check-circle mr-1"></i> Successfully Completed</span>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed max-w-4xl">
+                                Received a formal Letter of Recommendation from <strong>Himanshu Petwal, CEO/Founder of Digital Folks Cooperation</strong>. This letter validates the successful completion of the Digital Marketing Internship (Aug 2026 - Sep 2026), alongside recognizing dedication, impactful project contributions, and exemplary professional conduct.
+                            </p>
+                        </div>
+                        <a href="LOR of Akash Kashyap.pdf" target="_blank" class="shrink-0 inline-flex items-center gap-2 bg-teal-50 text-teal-700 border border-teal-200 hover:bg-teal-500 hover:text-white px-6 py-3 rounded-lg font-medium transition-colors">
+                            View LOR <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
                 <!-- Cert 1 -->
-                <div class="bg-gray-50 rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-accent-500/10 transition-all hover:-translate-y-2 reveal delay-100 text-left">
-                    <div class="w-14 h-14 bg-white rounded-full shadow-sm flex items-center justify-center mb-6 text-accent-600 text-2xl">
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-teal-500/10 transition-all hover:-translate-y-2 reveal delay-100 text-left">
+                    <div class="w-14 h-14 bg-white rounded-full shadow-sm flex items-center justify-center mb-6 text-teal-600 text-2xl">
                         <i class="fas fa-certificate"></i>
                     </div>
-                    <h3 class="font-heading text-xl font-bold text-primary-900 mb-1">NIDM</h3>
+                    <h3 class="font-heading text-xl font-bold text-navy-900 mb-1">NIDM</h3>
                     <p class="text-gray-500 text-sm mb-4">National Institute of Digital Marketing</p>
                     <ul class="text-gray-600 list-disc list-outside ml-4 space-y-1">
                         <li>Dynamic Digital Marketing program</li>
                     </ul>
                 </div>
                 <!-- Cert 2 -->
-                <div class="bg-gray-50 rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-accent-500/10 transition-all hover:-translate-y-2 reveal delay-200 text-left">
-                    <div class="w-14 h-14 bg-white rounded-full shadow-sm flex items-center justify-center mb-6 text-accent-600 text-2xl">
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-teal-500/10 transition-all hover:-translate-y-2 reveal delay-200 text-left">
+                    <div class="w-14 h-14 bg-white rounded-full shadow-sm flex items-center justify-center mb-6 text-teal-600 text-2xl">
                         <i class="fas fa-award"></i>
                     </div>
-                    <h3 class="font-heading text-xl font-bold text-primary-900 mb-4">HubSpot Academy</h3>
+                    <h3 class="font-heading text-xl font-bold text-navy-900 mb-4">HubSpot Academy</h3>
                     <ul class="text-gray-600 list-disc list-outside ml-4 space-y-1">
                         <li>Social media marketing</li>
                         <li>Digital marketing</li>
@@ -276,11 +314,11 @@
                     </ul>
                 </div>
                 <!-- Cert 3 -->
-                <div class="bg-gray-50 rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-accent-500/10 transition-all hover:-translate-y-2 reveal delay-300 text-left">
-                    <div class="w-14 h-14 bg-white rounded-full shadow-sm flex items-center justify-center mb-6 text-accent-600 text-2xl">
+                <div class="bg-gray-50 rounded-xl p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:shadow-teal-500/10 transition-all hover:-translate-y-2 reveal delay-300 text-left">
+                    <div class="w-14 h-14 bg-white rounded-full shadow-sm flex items-center justify-center mb-6 text-teal-600 text-2xl">
                         <i class="fab fa-google"></i>
                     </div>
-                    <h3 class="font-heading text-xl font-bold text-primary-900 mb-4">Google</h3>
+                    <h3 class="font-heading text-xl font-bold text-navy-900 mb-4">Google</h3>
                     <ul class="text-gray-600 list-disc list-outside ml-4 space-y-1">
                         <li>Google Display Ads certification</li>
                         <li>Google Search Ads certification</li>
@@ -294,58 +332,58 @@
     <section id="education" class="py-24 bg-gray-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
-                <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary-900 mb-4">Education</h2>
-                <div class="h-1 w-20 bg-accent-500 mx-auto rounded"></div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy-900 mb-4">Education</h2>
+                <div class="h-1 w-20 bg-teal-500 mx-auto rounded"></div>
             </div>
 
             <div class="space-y-6">
                 <!-- Edu 1 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between reveal delay-100 hover:border-accent-300 transition-colors">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between reveal delay-100 hover:border-teal-300 transition-colors">
                     <div>
-                        <h3 class="font-heading text-xl font-bold text-primary-900">NIDM (Digital Marketing)</h3>
-                        <p class="text-gray-600 mt-1"><i class="fas fa-map-marker-alt text-accent-500 mr-2"></i>Bangalore, Karnataka</p>
+                        <h3 class="font-heading text-xl font-bold text-navy-900">NIDM (Digital Marketing)</h3>
+                        <p class="text-gray-600 mt-1"><i class="fas fa-map-marker-alt text-teal-500 mr-2"></i>Bangalore, Karnataka</p>
                     </div>
-                    <div class="mt-4 md:mt-0 bg-accent-50 text-accent-700 px-4 py-2 rounded-full font-medium text-sm inline-block w-max">
+                    <div class="mt-4 md:mt-0 bg-teal-50 text-teal-700 px-4 py-2 rounded-full font-medium text-sm inline-block w-max">
                         August 2025 to November 2025
                     </div>
                 </div>
                 <!-- Edu 2 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between reveal delay-200 hover:border-accent-300 transition-colors">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between reveal delay-200 hover:border-teal-300 transition-colors">
                     <div>
-                        <h3 class="font-heading text-xl font-bold text-primary-900">MBA</h3>
-                        <p class="text-gray-600 mt-1"><i class="fas fa-university text-accent-500 mr-2"></i>IGNOU, Patna, Bihar</p>
+                        <h3 class="font-heading text-xl font-bold text-navy-900">MBA</h3>
+                        <p class="text-gray-600 mt-1"><i class="fas fa-university text-teal-500 mr-2"></i>IGNOU, Patna, Bihar</p>
                     </div>
-                    <div class="mt-4 md:mt-0 bg-accent-50 text-accent-700 px-4 py-2 rounded-full font-medium text-sm inline-block w-max">
+                    <div class="mt-4 md:mt-0 bg-teal-50 text-teal-700 px-4 py-2 rounded-full font-medium text-sm inline-block w-max">
                         2025 - Present
                     </div>
                 </div>
                 <!-- Edu 3 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between reveal delay-300 hover:border-accent-300 transition-colors">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between reveal delay-300 hover:border-teal-300 transition-colors">
                     <div>
-                        <h3 class="font-heading text-xl font-bold text-primary-900">B.A.</h3>
-                        <p class="text-gray-600 mt-1"><i class="fas fa-university text-accent-500 mr-2"></i>Magadh University, Gaya, Bihar</p>
+                        <h3 class="font-heading text-xl font-bold text-navy-900">B.A.</h3>
+                        <p class="text-gray-600 mt-1"><i class="fas fa-university text-teal-500 mr-2"></i>Magadh University, Gaya, Bihar</p>
                     </div>
-                    <div class="mt-4 md:mt-0 bg-accent-50 text-accent-700 px-4 py-2 rounded-full font-medium text-sm inline-block w-max">
+                    <div class="mt-4 md:mt-0 bg-teal-50 text-teal-700 px-4 py-2 rounded-full font-medium text-sm inline-block w-max">
                         March 2024
                     </div>
                 </div>
                 <!-- Edu 4 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between reveal delay-400 hover:border-accent-300 transition-colors">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between reveal delay-400 hover:border-teal-300 transition-colors">
                     <div>
-                        <h3 class="font-heading text-xl font-bold text-primary-900">12th</h3>
-                        <p class="text-gray-600 mt-1"><i class="fas fa-school text-accent-500 mr-2"></i>R.L.S.Y. INTER COLLEGE, Delha, Gaya</p>
+                        <h3 class="font-heading text-xl font-bold text-navy-900">12th</h3>
+                        <p class="text-gray-600 mt-1"><i class="fas fa-school text-teal-500 mr-2"></i>R.L.S.Y. INTER COLLEGE, Delha, Gaya</p>
                     </div>
-                    <div class="mt-4 md:mt-0 bg-accent-50 text-accent-700 px-4 py-2 rounded-full font-medium text-sm inline-block w-max">
+                    <div class="mt-4 md:mt-0 bg-teal-50 text-teal-700 px-4 py-2 rounded-full font-medium text-sm inline-block w-max">
                         2020
                     </div>
                 </div>
                 <!-- Edu 5 -->
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between reveal delay-500 hover:border-accent-300 transition-colors">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col md:flex-row md:items-center justify-between reveal delay-500 hover:border-teal-300 transition-colors">
                     <div>
-                        <h3 class="font-heading text-xl font-bold text-primary-900">SSLC</h3>
-                        <p class="text-gray-600 mt-1"><i class="fas fa-school text-accent-500 mr-2"></i>Kendriya Vidyalaya</p>
+                        <h3 class="font-heading text-xl font-bold text-navy-900">SSLC</h3>
+                        <p class="text-gray-600 mt-1"><i class="fas fa-school text-teal-500 mr-2"></i>Kendriya Vidyalaya</p>
                     </div>
-                    <div class="mt-4 md:mt-0 bg-accent-50 text-accent-700 px-4 py-2 rounded-full font-medium text-sm inline-block w-max">
+                    <div class="mt-4 md:mt-0 bg-teal-50 text-teal-700 px-4 py-2 rounded-full font-medium text-sm inline-block w-max">
                         2018
                     </div>
                 </div>
@@ -357,37 +395,37 @@
     <section id="personal" class="py-24 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 reveal">
-                <h2 class="font-heading text-3xl md:text-4xl font-bold text-primary-900 mb-4">Personal Details</h2>
-                <div class="h-1 w-20 bg-accent-500 mx-auto rounded"></div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy-900 mb-4">Personal Details</h2>
+                <div class="h-1 w-20 bg-teal-500 mx-auto rounded"></div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 reveal delay-100">
                 <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all">
                     <div class="flex items-center mb-6 border-b border-gray-200 pb-4">
-                        <i class="fas fa-user text-accent-500 text-2xl mr-3"></i>
-                        <h3 class="font-heading text-xl font-bold text-primary-900">Details</h3>
+                        <i class="fas fa-user text-teal-500 text-2xl mr-3"></i>
+                        <h3 class="font-heading text-xl font-bold text-navy-900">Details</h3>
                     </div>
                     <ul class="space-y-4 text-gray-600">
-                        <li class="flex flex-col sm:flex-row"><strong class="text-primary-900 sm:w-1/2">Father's Name:</strong> <span class="sm:w-1/2">Mr. Ajay Kumar Azad</span></li>
-                        <li class="flex flex-col sm:flex-row"><strong class="text-primary-900 sm:w-1/2">Date of Birth:</strong> <span class="sm:w-1/2">05 January 2003</span></li>
-                        <li class="flex flex-col sm:flex-row"><strong class="text-primary-900 sm:w-1/2">Marital Status:</strong> <span class="sm:w-1/2">Single</span></li>
+                        <li class="flex flex-col sm:flex-row"><strong class="text-navy-900 sm:w-1/2">Father's Name:</strong> <span class="sm:w-1/2">Mr. Ajay Kumar Azad</span></li>
+                        <li class="flex flex-col sm:flex-row"><strong class="text-navy-900 sm:w-1/2">Date of Birth:</strong> <span class="sm:w-1/2">05 January 2003</span></li>
+                        <li class="flex flex-col sm:flex-row"><strong class="text-navy-900 sm:w-1/2">Marital Status:</strong> <span class="sm:w-1/2">Single</span></li>
                     </ul>
                 </div>
                 <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all">
                     <div class="flex items-center mb-6 border-b border-gray-200 pb-4">
-                        <i class="fas fa-language text-accent-500 text-2xl mr-3"></i>
-                        <h3 class="font-heading text-xl font-bold text-primary-900">Languages Known</h3>
+                        <i class="fas fa-language text-teal-500 text-2xl mr-3"></i>
+                        <h3 class="font-heading text-xl font-bold text-navy-900">Languages Known</h3>
                     </div>
                     <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-center"><i class="fas fa-check text-accent-500 mr-2"></i> Hindi</li>
-                        <li class="flex items-center"><i class="fas fa-check text-accent-500 mr-2"></i> Bhojpuri</li>
+                        <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-2"></i> Hindi</li>
+                        <li class="flex items-center"><i class="fas fa-check text-teal-500 mr-2"></i> Bhojpuri</li>
                     </ul>
                 </div>
             </div>
 
             <div class="mt-16 text-center reveal delay-200">
-                <div class="inline-block bg-accent-50 border border-accent-100 rounded-lg p-6 max-w-2xl">
-                    <h3 class="font-heading text-lg font-bold text-primary-900 mb-2">Declaration</h3>
+                <div class="inline-block bg-teal-50 border border-teal-100 rounded-lg p-6 max-w-2xl">
+                    <h3 class="font-heading text-lg font-bold text-navy-900 mb-2">Declaration</h3>
                     <p class="text-gray-600 italic">"Hereby declare that the information provided above is true and correct to the best of my knowledge."</p>
                 </div>
             </div>
@@ -395,7 +433,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-24 bg-primary-900 text-white relative">
+    <section id="contact" class="py-24 bg-navy-900 text-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                 <div class="reveal">
@@ -406,25 +444,25 @@
                     
                     <div class="space-y-6">
                         <div class="flex items-center">
-                            <div class="w-12 h-12 bg-primary-800 rounded-lg flex items-center justify-center text-accent-500 mr-4">
+                            <div class="w-12 h-12 bg-navy-800 rounded-lg flex items-center justify-center text-teal-500 mr-4">
                                 <i class="fas fa-envelope text-xl"></i>
                             </div>
                             <div>
                                 <p class="text-gray-400 text-sm">Email</p>
-                                <a href="mailto:akrajkashyap@gmail.com" class="text-lg font-medium hover:text-accent-400 transition-colors">akrajkashyap@gmail.com</a>
+                                <a href="mailto:akrajkashyap@gmail.com" class="text-lg font-medium hover:text-teal-400 transition-colors">akrajkashyap@gmail.com</a>
                             </div>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-12 h-12 bg-primary-800 rounded-lg flex items-center justify-center text-accent-500 mr-4">
+                            <div class="w-12 h-12 bg-navy-800 rounded-lg flex items-center justify-center text-teal-500 mr-4">
                                 <i class="fas fa-phone-alt text-xl"></i>
                             </div>
                             <div>
                                 <p class="text-gray-400 text-sm">Phone</p>
-                                <a href="tel:+919934322450" class="text-lg font-medium hover:text-accent-400 transition-colors">+91 9934322450</a>
+                                <a href="tel:+919934322450" class="text-lg font-medium hover:text-teal-400 transition-colors">+91 9934322450</a>
                             </div>
                         </div>
                         <div class="flex items-center">
-                            <div class="w-12 h-12 bg-primary-800 rounded-lg flex items-center justify-center text-accent-500 mr-4">
+                            <div class="w-12 h-12 bg-navy-800 rounded-lg flex items-center justify-center text-teal-500 mr-4">
                                 <i class="fas fa-map-marker-alt text-xl"></i>
                             </div>
                             <div>
@@ -435,7 +473,7 @@
                     </div>
 
                     <div class="mt-10">
-                        <a href="https://www.linkedin.com/in/akashyap99" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-12 h-12 bg-primary-800 hover:bg-accent-500 text-white rounded-lg transition-colors mr-4">
+                        <a href="https://www.linkedin.com/in/akashyap99" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-12 h-12 bg-navy-800 hover:bg-teal-500 text-white rounded-lg transition-colors mr-4">
                             <i class="fab fa-linkedin-in text-xl"></i>
                         </a>
                     </div>
@@ -443,21 +481,21 @@
 
                 <!-- Contact Form -->
                 <div class="bg-white rounded-2xl p-8 shadow-xl reveal delay-200">
-                    <h3 class="font-heading text-2xl font-bold text-primary-900 mb-6">Send a Message</h3>
+                    <h3 class="font-heading text-2xl font-bold text-navy-900 mb-6">Send a Message</h3>
                     <form action="#" method="POST" class="space-y-4">
                         <div>
                             <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent-500 focus:border-accent-500 outline-none transition-shadow text-gray-900" placeholder="John Doe" required>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-shadow text-gray-900" placeholder="John Doe" required>
                         </div>
                         <div>
                             <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent-500 focus:border-accent-500 outline-none transition-shadow text-gray-900" placeholder="john@example.com" required>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-shadow text-gray-900" placeholder="john@example.com" required>
                         </div>
                         <div>
                             <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-accent-500 focus:border-accent-500 outline-none transition-shadow text-gray-900 resize-none" placeholder="How can I help you?" required></textarea>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-teal-500 focus:border-teal-500 outline-none transition-shadow text-gray-900 resize-none" placeholder="How can I help you?" required></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-accent-500 hover:bg-accent-600 text-white font-medium py-3 rounded-lg transition-colors shadow-md shadow-accent-500/20">
+                        <button type="submit" class="w-full bg-teal-500 hover:bg-teal-600 text-white font-medium py-3 rounded-lg transition-colors shadow-md shadow-teal-500/20">
                             Send Message
                         </button>
                     </form>
