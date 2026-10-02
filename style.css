@@ -47,6 +47,8 @@
 .delay-100 { transition-delay: 100ms; }
 .delay-200 { transition-delay: 200ms; }
 .delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
 
 /* Timeline adjustments for mobile vs desktop */
 @media (min-width: 768px) {
@@ -60,7 +62,7 @@
     bottom: 0;
     left: 50%;
     width: 4px;
-    background-color: #fed7aa; /* accent-200 */
+    background-color: #99f6e4; /* teal-200 */
     transform: translateX(-50%);
   }
 }
